@@ -148,6 +148,7 @@
     <section>
       <h1>Exercise 3</h1>
       <p id="blinking-text">I should be <strong>red</strong> and blinking! If I'm not, then something is wrong.</p>
+
       <p>Admire the text above. It's beautiful, isn't it?</p>
       <p><strong>Javascript</strong> is what's making the text blink. You can see the code inside <code>index.html</code>. Can you find it?</p>
       <p><strong>CSS</strong> is what's making the text red. It is also in <code>index.html</code>. Can you find it?</p>
@@ -217,18 +218,7 @@
   </div>
 
   <!-- Yay! You've found me. -->
-  <script type="text/javascript">
-    window.onload = function() {
-      var node = document.getElementById('blinking-text');
-      setInterval(function() {
-        visibility = node.style.visibility;
-        if (visibility == "") {
-          node.style.visibility = "hidden";
-        } else {
-          node.style.visibility = "";
-        }
-      }, 800);
-    }
-  </script>
+  <script type = "text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
